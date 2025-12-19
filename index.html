@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កសិកម្មភូមិខ្ញុំ</title>
+    <link rel="shortcut icon" href="./img-logo/logo (1).svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Khmer&family=Koulen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+
+</head>
+
+<body>
+    <header class="navbarr fixed-top bg-primary">
+        <marquee behavior="" direction="">
+            <p id="ab_marquee_text" class="animate-marquee inline-block"
+                style="min-width: 30%; font-size: small; color: rgb(255, 255, 255); margin-top: 5px;">
+                គេហទំព័រនេះគឺជាហាងអនឡាញសម្រាប់លក់ផលិតផលរបស់កសិករ ដោយផ្តោតលើសហគមន៍ជនបទ។
+                វាផ្តល់ជូននូវទំនិញកសិកម្មក្នុងស្រុកដើម្បីជួយកសិករទៅដល់អតិថិជនកាន់តែច្រើន និងលើកកម្ពស់ការអភិវឌ្ឍន៍សហគមន៍។
+                ការរចនាមានសោភ័ណភាពធម្មជាតិជាមួយនឹងសម្លេងពណ៌បៃតង ដើម្បីបង្ហាញពីចំណាប់អារម្មណ៍ដ៏កក់ក្តៅ ពិតប្រាកដ
+                និងជាមិត្តភាពបរិស្ថាន។
+            </p>
+        </marquee>
+
+    </header>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-xl fixed-top mt-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                កសិកម្មភូមិខ្ញុំ
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">ទំព័រដើម</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">ផលិតផល</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">អំពីយើង</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ទំនាក់ទំនង</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Hero with Video -->
+    <section id="home" class="hero position-relative">
+        <video autoplay muted loop playsinline poster="./image/fallback.jpg">
+            <source src="./video/Background.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4);"></div>
+        <div class="container h-100 position-relative">
+            <div class="row h-100 align-items-center text-center">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-3 fw-bold text-white mb-4">
+                        សូមស្វាគមន៍មកកាន់គេហទំព័រ<br>
+                        <span style="color:#00ff88;">កសិកម្មភូមិខ្ញុំ</span>
+                    </h1>
+                    <p class="lead text-white mb-4">ផ្តល់ជូននូវ​កសិផលក្នុងស្រុក​ ពូជសត្វ សាច់ស្រស់ៗ បន្លែ ស្រូវ
+                        និងចំណីសត្វគុណភាពខ្ពស់</p>
+                    <a href="#shop" class="btn btn-primary btn-lg px-5 py-3">ចូលមើលផលិតផល</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2">
+        <div class="container">
+            <div class="d-flex justify-content-md-center">
+                <img src="./img-logo/logo (1).svg" alt="" style="width: 400px;">
+            </div>
+            <!-- Search Bar -->
+            <div class="text-center mb-5">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" placeholder="ស្វែងរកផលិតផល...">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+            </div>
+
+            <!-- Categories Title -->
+            <div class="d-flex justify-content-between mb-4">
+                <h3 class="fw-bold mb-0" style="margin-left: 40%;">ប្រភេទផលិតផល</h3>
+                <a href="#" class="text-dark text-decoration-none fw-medium"></a>
+            </div>
+
+            <!-- Category Buttons -->
+            <div class="row g-5 justify-content-center justify-content-md-center">
+                <div class="col-auto">
+                    <button class="cat-btn" style="margin-left: 20px;">
+                        <span style="font-size: 2.4rem;">
+                            <img src="./image/iconrooster.png" alt="" style="width: 80px;">
+                        </span>
+                    </button>
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/duck-icon.png" alt="" style="width: 80px;">
+                        </span>
+
+                    </button>
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/meatcow.png" alt="" style="width: 80px;">
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/vegatable.png" alt="" style="width: 80px;">
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/fish.png" alt="" style="width: 80px;">
+                        </span>
+                    </button>
+
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/feed.png" alt="" style="width: 80px;">
+                        </span>
+                    </button>
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/rice.png" alt="" style="width: 80px;">
+                        </span>
+
+                    </button>
+                </div>
+                <div class="col-auto">
+                    <button class="cat-btn">
+                        <span style="font-size: 2.5rem;">
+                            <img src="./image/egg.png" alt="" style="width: 80px;">
+                        </span>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="shop" class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5 display-4" style="color:#212529;">ផលិតផលរបស់យើង</h1>
+            <div class="row g-5" id="productList">
+                <!-- Product Card will render here -->
+             </div>
+        </div>
+    </section>
+    <!-- question -->
+    <section id="About" class="py-5 mb-4">
+        <div class="container">
+            <!-- FAQ Header -->
+            <div class="faq-header">
+                <h5 class="faq-title">អំពីយើង</h5>
+                <p class="faq-subtitle">
+                    
+                </p>
+            </div>
+            <!-- Accordion FAQ -->
+            <div class="accordion">
+
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            តើ Website នេះបង្កើតឡើងមកដើម្បីអ្វី?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Website ត្រូវបានបង្កើតឡើងដោយផ្តោតលើការគាំទ្រកសិផលផលក្នុងស្រុកនិងកាត់បន្ថយទំនិញនាំចូល។
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            ហេតុអ្វីបានជាអ្នកគួរតែទិញផលិតផលក្នុងស្រុក?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            ដើម្បីឱ្យសេដ្ឋកិច្ចរីកចម្រើនយើងម្នាក់ៗត្រូវតែប្រើប្រាស់ផលិតផលក្នុងស្រុក​ ហើយអាចបង្កើតការងារដល់បងប្អូនប្រជាកសិករ។
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            តើកសិផលក្នុងស្រុកមានជាតិគីមីដែលអាចប៉ះពាល់ដល់សុខភាពទេ ?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            សំនួរល្អណាស់! ចំពោះកសិផលក្នុងស្រុកមានជាតិគីមីក្នុងបរិមាណតិចតួចបំផុត!​ ភាគច្រើនបងប្អូនកសិករយើងប្រើប្រាស់ជីធម្មជាតិដូចជា លោមកគោ មាន់​ ជាដើម...។ 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            តើនរណាជាអ្នកបង្កើតក្រុមហ៊ុន<span style="color: #16a911; margin: 2px;">កសិកម្មភូមិខ្ញុំ</span>នេះឡើងមក ?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            ក្រុមហ៊ុននេះត្រូវបានបង្កើតឡើងដោយលោក <strong>សោ វិសាល</strong> ដែលជាអ្នកអភិវឌ្ឍន៏កម្មវិធីកំព្យូទ័រ និងសព្វថ្ងៃកំពុងសិក្សានៅសកលវិទ្យាល័យអាសុីអឺរ៉ុប។
+                            ក្នុងគោលបំណងដើម្បីបង្កើតការងារដល់បងប្អូនប្រជាកសិករ និងគាំទ្រផលិតផលក្នុងស្រុក រស់នៅជាមួយបច្ចេកវិទ្យាក្នុងសម័យឌីជីថល។ 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                            តើតម្លៃផលិតផលក្នុងស្រុកថ្លៃជាងផលិតនាំចូលដែររឺទេ ?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           មិនអីចឹងទេ! ធម្មតារប្រសិនបើយើងគិតពីតម្លៃនោះផលិតផលក្នុងស្រុកមានតម្លៃសមរម្យហើយធូរថ្លៃជាងការនាំចូល។ ជាពិសេសអ្នកនិងមិនភ័យព្រួយអំពីជាតិគីមី ពីព្រោះកសិករយើងប្រើប្រាស់តែជីធម្មជាតិនឹង!😆
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="contact" class="bg-white py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- Logo / Brand -->
+                <div class="col-lg-4 text-lg-start text-center mb-4 mb-lg-0">
+                    <h2 class="fw-bold" style="color: #0d3b66; font-size: 2.5rem;">
+                        កសិកម្មភូមិខ្ញុំ
+                    </h2>
+                    <h6 class="text-muted small mt-5">
+                        @All Rights Reserved 2025 by កសិកម្មភូមិខ្ញុំ
+                    </h6>
+                </div>
+
+                <!-- Middle Section: Links + Contact -->
+                <div class="col-lg-4 text-center">
+                    <div class="card border-0 shadow-sm"
+                        style="background: #0d3b66; color: white; border-radius: 20px;">
+                        <div class="card-body p-4">
+
+                            <!-- Quick Links -->
+                            <h5 class="mb-4" style="color: #a3d9ff;">Explore More!</h5>
+                            <div class="row text-center text-lg-center">
+                                <div class="col-6">
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">Home</a>
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">Our
+                                        Work</a>
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">About
+                                        Us</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">Blog</a>
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">Contact
+                                        Us</a>
+                                    <a href="#" class="text-white d-block mb-2 text-decoration-none hover-link">Contact
+                                        Us</a>
+                                </div>
+
+                            </div>
+
+                            <div class="payment">
+                                <p style="align-items: center;">We accept</p>
+                                <a href=""><img src="./image/ABA-Logo.png" alt=""
+                                        style="width: 33px; padding: 3px;"></a>
+                                <a href=""><img src="./image/KHQR.png" alt="" style="width: 40px;  padding: 3px;"></a>
+                                <a href=""><img src="./image/MasterCard_Logo.svg.png" alt=""
+                                        style="width: 40px;  padding: 3px;"></a>
+                            </div>
+                            <hr class="my-4 border-secondary">
+
+                            <!-- Contact Info -->
+                            <p class=" text-lg-start small">
+                                <i class="fas fa-envelope me-2"></i>
+                                sorviksal128@gmail.com
+                            </p>
+                            <p class="text-lg-start mb-2 small">
+                                <i class="fas fa-phone me-2"></i>
+                                (855) 973921153
+                            </p>
+                            <p class=" text-lg-start mb-2 small">
+                                <i class="fa-solid fa-house"></i>
+                                ភូមិពពេល ឃុំខុនរ៉ង ស្រុកបរិបូរណ៏ ខេត្តកំពង់ឆ្នាំង
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section: Newsletter + Social Icons -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100" style="border-radius: 20px;">
+                        <div class="card-body p-4">
+                            <h5 class="text-dark mb-3">Subscribe To Our Newsletter</h5>
+
+                            <form class="d-flex flex-column gap-3">
+                                <input type="email" class="form-control form-control-lg rounded-pill"
+                                    placeholder="Email" style="border: 1px solid #dee2e6;">
+                                <button type="submit" class="btn btn-primary rounded-pill fw-bold"
+                                    style="background: #0d3b66; border: none;">
+                                    Subscribe
+                                </button>
+                            </form>
+
+                            <!-- Social Icons -->
+                            <div class="mt-4 d-flex justify-content-center gap-3">
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab fa-instagram fs-4 "></i>
+                                </a>
+                                <a href="https://web.facebook.com/brosalzin.two" class="text-decoration-none">
+                                    <i class="fab fa-facebook-f fs-4 "></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fab fa-twitter fs-4 "></i>
+                                </a>
+                                <a href="#" class="text-decoration-none">
+                                    <i class="fa-brands fs-4  fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
