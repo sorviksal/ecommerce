@@ -50,7 +50,7 @@
         </div>
     </header>
     <!-- Hero with Video -->
-    <section  class="hero position-relative">
+    <section class="hero position-relative">
         <video autoplay muted loop playsinline poster="./image/fallback.jpg">
             <source src="./video/Background.mp4" type="video/mp4">
             Your browser does not support video.
@@ -70,11 +70,14 @@
             </div>
         </div>
     </section>
-    <section class="py-2">
+    <!-- Search Bar -->
+    <section class="py-5">
         <div class="container">
-            <div class="d-flex justify-content-md-center">
-                <img src="./img-logo/logo (1).svg" alt="" style="width: 400px;">
+            <!-- Logo -->
+            <div class="d-flex justify-content-center mb-4">
+                <img src="./img-logo/logo (1).svg" alt="Logo" style="width: 400px;">
             </div>
+
             <!-- Search Bar -->
             <div class="text-center mb-5">
                 <div class="search-box">
@@ -85,74 +88,69 @@
             </div>
 
             <!-- Categories Title -->
-            <div class="d-flex justify-content-between mb-4">
-                <h3 class="fw-bold mb-0" style="margin-left: 40%;">ប្រភេទផលិតផល</h3>
-                <a href="#" class="text-dark text-decoration-none fw-medium"></a>
-            </div>
+            <h3 class="section-title">Our Clients</h3>
 
-            <!-- Category Buttons -->
-            <div class="row g-5 justify-content-center justify-content-md-center">
-                <div class="col-auto">
-                    <button class="cat-btn" style="margin-left: 20px;">
-                        <span style="font-size: 2.4rem;">
-                            <img src="./image/iconrooster.png" alt="" style="width: 80px;">
-                        </span>
-                    </button>
-                </div>
-                <div class="col-auto">
+            <!-- Category Marquee -->
+            <div class="marquee-container">
+                <div class="marquee">
+                    <!-- First Set of Categories -->
                     <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/duck-icon.png" alt="" style="width: 80px;">
-                        </span>
-
+                        <img src="./img-logo/AEON.png">
                     </button>
-                </div>
-                <div class="col-auto">
                     <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/meatcow.png" alt="" style="width: 80px;">
-                        </span>
+                        <img src="./img-logo/bayon.jpg">
                     </button>
-
-                </div>
-                <div class="col-auto">
                     <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/vegatable.png" alt="" style="width: 80px;">
-                        </span>
+                        <img src="./img-logo/chipmong.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/lucky.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/sambo.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/kroger.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/grocery.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/fresh.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/superindologo.jpg">
                     </button>
 
-                </div>
-                <div class="col-auto">
+                    <!-- Duplicate Set for Seamless Loop -->
                     <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/fish.png" alt="" style="width: 80px;">
-                        </span>
+                        <img src="./img-logo/AEON.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/bayon.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/chipmong.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/lucky.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/sambo.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/kroger.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/grocery.png">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/fresh.jpg">
+                    </button>
+                    <button class="cat-btn">
+                        <img src="./img-logo/superindologo.jpg">
                     </button>
 
-                </div>
-                <div class="col-auto">
-                    <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/feed.png" alt="" style="width: 80px;">
-                        </span>
-                    </button>
-                </div>
-                <div class="col-auto">
-                    <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/rice.png" alt="" style="width: 80px;">
-                        </span>
-
-                    </button>
-                </div>
-                <div class="col-auto">
-                    <button class="cat-btn">
-                        <span style="font-size: 2.5rem;">
-                            <img src="./image/egg.png" alt="" style="width: 80px;">
-                        </span>
-
-                    </button>
                 </div>
             </div>
         </div>
@@ -164,8 +162,44 @@
             <h1 class="text-center mb-5 display-4" style="color:#212529;">ផលិតផលរបស់យើង</h1>
             <div class="row g-5" id="productList">
                 <!-- Product Card will render here -->
-             </div>
+            </div>
         </div>
+    
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="modalImage" src="" class="modal-product-img" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h2 id="modalName" class="mb-3"></h2>
+                            <p class="text-muted mb-2">បរិមាណ: <span id="modalQty"></span></p>
+                            <p class="modal-price mb-4" id="modalPrice"></p>
+                            
+                            <div class="quantity-control">
+                                <button id="decreaseBtn">-</button>
+                                <input type="number" id="quantityInput" value="1" min="1">
+                                <button id="increaseBtn">+</button>
+                            </div>
+
+                            <p class="mb-3">តម្លៃសរុប<span class="modal-price" id="totalPrice"></span></p>
+
+                            <button class="btn-add-cart w-100">
+                                <i class="fas fa-shopping-cart"></i> បន្ថែមទៅកន្ត្រក
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </section>
     <!-- question -->
     <section id="About" class="py-5 mb-4">
@@ -174,7 +208,7 @@
             <div class="faq-header">
                 <h5 class="faq-title">អំពីយើង</h5>
                 <p class="faq-subtitle">
-                    
+
                 </p>
             </div>
             <!-- Accordion FAQ -->
@@ -205,7 +239,8 @@
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            ដើម្បីឱ្យសេដ្ឋកិច្ចរីកចម្រើនយើងម្នាក់ៗត្រូវតែប្រើប្រាស់ផលិតផលក្នុងស្រុក​ ហើយអាចបង្កើតការងារដល់បងប្អូនប្រជាកសិករ។
+                            ដើម្បីឱ្យសេដ្ឋកិច្ចរីកចម្រើនយើងម្នាក់ៗត្រូវតែប្រើប្រាស់ផលិតផលក្នុងស្រុក​
+                            ហើយអាចបង្កើតការងារដល់បងប្អូនប្រជាកសិករ។
                         </div>
                     </div>
                 </div>
@@ -220,7 +255,8 @@
                     </h2>
                     <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            សំនួរល្អណាស់! ចំពោះកសិផលក្នុងស្រុកមានជាតិគីមីក្នុងបរិមាណតិចតួចបំផុត!​ ភាគច្រើនបងប្អូនកសិករយើងប្រើប្រាស់ជីធម្មជាតិដូចជា លោមកគោ មាន់​ ជាដើម...។ 
+                            សំនួរល្អណាស់! ចំពោះកសិផលក្នុងស្រុកមានជាតិគីមីក្នុងបរិមាណតិចតួចបំផុត!​
+                            ភាគច្រើនបងប្អូនកសិករយើងប្រើប្រាស់ជីធម្មជាតិដូចជា លោមកគោ មាន់​ ជាដើម...។
                         </div>
                     </div>
                 </div>
@@ -230,13 +266,16 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#faq4">
-                            តើនរណាជាអ្នកបង្កើតក្រុមហ៊ុន<span style="color: #16a911; margin: 2px;">កសិកម្មភូមិខ្ញុំ</span>នេះឡើងមក ?
+                            តើនរណាជាអ្នកបង្កើតក្រុមហ៊ុន<span
+                                style="color: #16a911; margin: 2px;">កសិកម្មភូមិខ្ញុំ</span>នេះឡើងមក ?
                         </button>
                     </h2>
                     <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            ក្រុមហ៊ុននេះត្រូវបានបង្កើតឡើងដោយលោក <strong>សោ វិសាល</strong> ដែលជាអ្នកអភិវឌ្ឍន៏កម្មវិធីកំព្យូទ័រ និងសព្វថ្ងៃកំពុងសិក្សានៅសកលវិទ្យាល័យអាសុីអឺរ៉ុប។
-                            ក្នុងគោលបំណងដើម្បីបង្កើតការងារដល់បងប្អូនប្រជាកសិករ និងគាំទ្រផលិតផលក្នុងស្រុក រស់នៅជាមួយបច្ចេកវិទ្យាក្នុងសម័យឌីជីថល។ 
+                            ក្រុមហ៊ុននេះត្រូវបានបង្កើតឡើងដោយលោក <strong>សោ វិសាល</strong>
+                            ដែលជាអ្នកអភិវឌ្ឍន៏កម្មវិធីកំព្យូទ័រ និងសព្វថ្ងៃកំពុងសិក្សានៅសកលវិទ្យាល័យអាសុីអឺរ៉ុប។
+                            ក្នុងគោលបំណងដើម្បីបង្កើតការងារដល់បងប្អូនប្រជាកសិករ និងគាំទ្រផលិតផលក្នុងស្រុក
+                            រស់នៅជាមួយបច្ចេកវិទ្យាក្នុងសម័យឌីជីថល។
                         </div>
                     </div>
                 </div>
@@ -251,7 +290,9 @@
                     </h2>
                     <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                           មិនអីចឹងទេ! ធម្មតារប្រសិនបើយើងគិតពីតម្លៃនោះផលិតផលក្នុងស្រុកមានតម្លៃសមរម្យហើយធូរថ្លៃជាងការនាំចូល។ ជាពិសេសអ្នកនិងមិនភ័យព្រួយអំពីជាតិគីមី ពីព្រោះកសិករយើងប្រើប្រាស់តែជីធម្មជាតិនឹង!😆
+                            មិនអីចឹងទេ!
+                            ធម្មតារប្រសិនបើយើងគិតពីតម្លៃនោះផលិតផលក្នុងស្រុកមានតម្លៃសមរម្យហើយធូរថ្លៃជាងការនាំចូល។
+                            ជាពិសេសអ្នកនិងមិនភ័យព្រួយអំពីជាតិគីមី ពីព្រោះកសិករយើងប្រើប្រាស់តែជីធម្មជាតិនឹង!😆
                         </div>
                     </div>
                 </div>
@@ -366,4 +407,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

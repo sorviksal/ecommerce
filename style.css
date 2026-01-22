@@ -1,314 +1,470 @@
      body {
-            font-family: 'Khmer', sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-       /* Navbar Base Styles */
-        .navbar {
-            background: rgb(255, 255, 255);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            font-family: 'Battambang', 'Siemreap', sans-serif;
-            padding: 15px 0;
-            min-height: 20px;
-        }
+         font-family: 'Khmer', sans-serif;
+         background-color: #f8f9fa;
+         color: #212529;
+     }
 
-        /* Navbar when scrolled */
-        .navbar.scrolled {
-            background: rgb(219, 132, 44);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            padding: 8px 0;
-            min-height: 60px;
-        }
+     /* Navbar Base Styles */
+     .navbar {
+         background: rgb(255, 255, 255);
+         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+         transition: all 0.3s ease;
+         font-family: 'Battambang', 'Siemreap', sans-serif;
+         padding: 15px 0;
+         min-height: 20px;
+     }
 
-        /* Navbar Brand */
-        .navbar-brand {
-            font-family: 'Bayon', 'Battambang', sans-serif;
-            font-size: 2rem;
-            color: #169500 !important;
-            transition: all 0.3s ease;
-        }
+     /* Navbar when scrolled */
+     .navbar.scrolled {
+         background: rgb(219, 132, 44);
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+         padding: 8px 0;
+         min-height: 60px;
+     }
 
-        .navbar.scrolled .navbar-brand {
-            color: #ffffff !important;
-        }
+     /* Navbar Brand */
+     .navbar-brand {
+         font-family: 'Bayon', 'Battambang', sans-serif;
+         font-size: 2rem;
+         color: #169500 !important;
+         transition: all 0.3s ease;
+     }
 
-        /* Nav Links */
-        .nav-link {
-            color: #000 !important;
-            font-weight: 500;
-            font-family: 'Koulen', 'Battambang', sans-serif;
-            font-size: 1.3rem;
-            padding: 10px 20px;
-            transition: all 0.3s ease;
-        }
+     .navbar.scrolled .navbar-brand {
+         color: #ffffff !important;
+     }
 
-        /* Nav Links Hover - Normal State */
-        .nav-link:hover {
-            color: #00ff08 !important;
-            transform: scale(1.05);
-        }
+     /* Nav Links */
+     .nav-link {
+         color: #000 !important;
+         font-weight: 500;
+         font-family: 'Koulen', 'Battambang', sans-serif;
+         font-size: 1.3rem;
+         padding: 10px 20px;
+         transition: all 0.3s ease;
+     }
 
-        /* Nav Links when scrolled */
-        .navbar.scrolled .nav-link {
-            color: #ffffff !important;
-        }
+     /* Nav Links Hover - Normal State */
+     .nav-link:hover {
+         color: #00ff08 !important;
+         transform: scale(1.05);
+     }
 
-        /* Nav Links Hover - Scrolled State */
-        .navbar.scrolled .nav-link:hover {
-            color: #00fff2 !important;
-            transform: scale(1.05);
-        }
+     /* Nav Links when scrolled */
+     .navbar.scrolled .nav-link {
+         color: #ffffff !important;
+     }
 
-        /* Navbar Toggler Icon Color */
-        .navbar-toggler {
-            border-color: #19a900;
-        }
+     /* Nav Links Hover - Scrolled State */
+     .navbar.scrolled .nav-link:hover {
+         color: #00fff2 !important;
+         transform: scale(1.05);
+     }
 
-        .navbar.scrolled .navbar-toggler {
-            border-color: #ffffff;
-        }
+     /* Navbar Toggler Icon Color */
+     .navbar-toggler {
+         border-color: #19a900;
+     }
 
-        /* Demo Content */
-        section {
-            min-height: 80vh;
-            padding: 90px 0;
-        }
+     .navbar.scrolled .navbar-toggler {
+         border-color: #ffffff;
+     }
 
-        #home {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
+     /* Demo Content */
+     section {
+         min-height: 80vh;
+         padding: 90px 0;
+     }
 
-        #shop {
-            background: linear-gradient(135deg, #dcdbdd 0%, #ffffff 100%);
-            color: white;
-        }
+     #home {
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         color: white;
+     }
 
-        #About {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            color: white;
-        }
+     #shop {
+         background: linear-gradient(135deg, #dcdbdd 0%, #ffffff 100%);
+         color: white;
+     }
 
-        #contact {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-            color: white;
-        }
-        /* Hero Video */
-        .hero {
-            height: 100vh;
-            min-height: 500px;
-        }
+     #About {
+         background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+         color: white;
+     }
 
-        .hero video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-        }
+     #contact {
+         background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+         color: white;
+     }
 
-        /* Product Cards - សំខាន់បំផុត! */
-        .product-card {
-            background: white;
-            border: none;
-            border-radius: 15px;
+     /* Hero Video */
+     .hero {
+         height: 100vh;
+         min-height: 500px;
+     }
+
+     .hero video {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         z-index: -1;
+     }
+
+     /* Product Cards - សំខាន់បំផុត! */
+     .product-card {
+         background: white;
+         border: none;
+         border-radius: 15px;
+         overflow: hidden;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+         transition: all 0.3s ease;
+         height: 100%;
+     }
+
+     .product-card:hover {
+         transform: translateY(-10px);
+         box-shadow: 0 15px 30px rgba(238, 255, 0, 0.647);
+     }
+
+     .product-img {
+         width: 100%;
+         height: 200px !important;
+         /* កម្ពស់ដូចគ្នាទាំងអស់ */
+         object-fit: cover;
+         /* កាត់ឱ្យស្អាត មិនយើង */
+         border-bottom: 3px solid #878a89;
+     }
+
+     .card-body {
+         padding: 1.5rem;
+         text-align: center;
+     }
+
+     .card-title {
+         font-family: 'Koulen', sans-serif;
+         font-size: 1.2rem;
+         color: #242129;
+         margin-bottom: 0.5rem;
+     }
+
+     .cat-btn.active {
+         border: 2px solid #00cc66;
+         transform: scale(1.05);
+         transition: all 0.2s ease-in-out;
+     }
+
+     .price {
+         font-size: 1rem;
+         font-weight: bold;
+         color: #2b00ff;
+     }
+
+     .btn-primary {
+         background-color: #007c25;
+         border: none;
+         font-weight: bold;
+         padding: 10px 20px;
+         border-radius: 50px;
+     }
+
+     .btn-primary:hover {
+         background-color: #22ff00;
+     }
+
+     h1,
+     h2,
+     .display-3 {
+         font-family: 'Bayon', sans-serif;
+     }
+
+     .search-box {
+         position: relative;
+         max-width: 600px;
+         margin: 0 auto;
+     }
+
+     .search-box input {
+         padding-left: 50px;
+         padding-right: 50px;
+         height: 60px;
+         border-radius: 50px;
+         border: none;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+         font-size: 1.1rem;
+     }
+
+     .search-box i {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         font-size: 1.3rem;
+         color: #888;
+     }
+
+     .search-box .fa-search {
+         left: 20px;
+     }
+
+     .search-box .fa-sliders-h {
+         right: 20px;
+     }
+
+     /* Category Buttons – ស្អាតខ្លាំង */
+     .cat-btn {
+         width: 106px;
+         height: 106px;
+         border-radius: 24px;
+         border: none;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         font-weight: 600;
+         transition: all 0.3s;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+     }
+
+     .cat-btn.all {
+         background: #ff9800;
+         color: white;
+     }
+
+     .cat-btn:not(.all) {
+         background: white;
+         color: #555;
+     }
+
+     .cat-btn:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+     }
+
+     /* About */
+     .faq-header {
+         text-align: center;
+         margin-bottom: 50px;
+     }
+
+     .faq-header .badge {
+         background-color: #0d6efd;
+         font-size: 0.9rem;
+         padding: 8px 20px;
+         border-radius: 50px;
+     }
+
+     .faq-title {
+         font-family: 'Bayon', sans-serif;
+         font-size: 2rem;
+         font-weight: bold;
+         margin-top: 15px;
+     }
+
+     .faq-subtitle {
+         color: #6c757d;
+         font-size: 1rem;
+         max-width: 700px;
+         margin: 0 auto;
+     }
+
+     /* Custom Accordion Style */
+     .accordion-item {
+         border: none;
+         border-radius: 12px !important;
+         margin-bottom: 16px;
+         overflow: hidden;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+         background-color: #ffffff;
+     }
+
+     .accordion-button {
+         font-weight: 600;
+         font-size: 1.15rem;
+         color: #212529;
+         background-color: #f1f3f5;
+         padding: 1.2rem 1.5rem;
+         border-radius: 12px !important;
+     }
+
+     .accordion-button:not(.collapsed) {
+         background-color: #e7f1ff;
+         color: #0d6efd;
+         box-shadow: none;
+     }
+
+     .accordion-button::after {
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+     }
+
+     .accordion-button.collapsed::after {
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+     }
+
+     .accordion-body {
+         padding: 1.5rem;
+         background-color: #ffffff;
+         line-height: 1.8;
+         color: #495057;
+     }
+
+     .hover-link:hover {
+         color: #a3d9ff !important;
+         text-decoration: underline !important;
+     }
+  /* Modal Styling */
+        .modal-content {
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            height: 100%;
         }
 
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(238, 255, 0, 0.647);
-        }
-
-        .product-img {
+        .modal-product-img {
             width: 100%;
-            height: 200px !important;
-            /* កម្ពស់ដូចគ្នាទាំងអស់ */
+            height: 400px;
             object-fit: cover;
-            /* កាត់ឱ្យស្អាត មិនយើង */
-            border-bottom: 3px solid #878a89;
         }
 
-        .card-body {
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .card-title {
-            font-family: 'Koulen', sans-serif;
-            font-size: 1.2rem;
-            color: #242129;
-            margin-bottom: 0.5rem;
-        }
-        .cat-btn.active {
-            border: 2px solid #00cc66;
-            transform: scale(1.05);
-            transition: all 0.2s ease-in-out;
-            }
-
-        .price {
-            font-size: 1rem;
+        .modal-price {
+            font-size: 1.5rem;
             font-weight: bold;
-            color: #2b00ff;
+            color: #000000;
         }
 
-        .btn-primary {
-            background-color: #007c25;
-            border: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 50px;
-        }
-
-        .btn-primary:hover {
-            background-color: #22ff00;
-        }
-
-        h1,
-        h2,
-        .display-3 {
-            font-family: 'Bayon', sans-serif;
-        }
-
-        .search-box {
-            position: relative;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .search-box input {
-            padding-left: 50px;
-            padding-right: 50px;
-            height: 60px;
-            border-radius: 50px;
-            border: none;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            font-size: 1.1rem;
-        }
-
-        .search-box i {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.3rem;
-            color: #888;
-        }
-
-        .search-box .fa-search {
-            left: 20px;
-        }
-
-        .search-box .fa-sliders-h {
-            right: 20px;
-        }
-
-        /* Category Buttons – ស្អាតខ្លាំង */
-        .cat-btn {
-            width: 106px;
-            height: 106px;
-            border-radius: 24px;
-            border: none;
+        .quantity-control {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            gap: 15px;
+            margin: 20px 0;
         }
 
-        .cat-btn.all {
-            background: #ff9800;
+        .quantity-control button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #19a900;
+            background: white;
+            color: #19a900;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quantity-control button:hover {
+            background: #19a900;
             color: white;
         }
 
-        .cat-btn:not(.all) {
-            background: white;
-            color: #555;
-        }
-
-        .cat-btn:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-        /* About */
-        .faq-header {
+        .quantity-control input {
+            width: 90px;
             text-align: center;
-            margin-bottom: 50px;
-        }
-        .faq-header .badge {
-            background-color: #0d6efd;
-            font-size: 0.9rem;
-            padding: 8px 20px;
-            border-radius: 50px;
-        }
-        .faq-title {
-            font-family: 'Bayon', sans-serif;
-            font-size: 2rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 8px;
+            font-size: 18px;
             font-weight: bold;
-            margin-top: 15px;
-        }
-        .faq-subtitle {
-            color: #6c757d;
-            font-size: 1rem;
-            max-width: 700px;
-            margin: 0 auto;
         }
 
-        /* Custom Accordion Style */
-        .accordion-item {
+        .btn-add-cart {
+            background: #2600ff;
+            color: white;
             border: none;
-            border-radius: 12px !important;
-            margin-bottom: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            background-color: #ffffff;
-        }
-        .accordion-button {
-            font-weight: 600;
-            font-size: 1.15rem;
-            color: #212529;
-            background-color: #f1f3f5;
-            padding: 1.2rem 1.5rem;
-            border-radius: 12px !important;
-        }
-        .accordion-button:not(.collapsed) {
-            background-color: #e7f1ff;
-            color: #0d6efd;
-            box-shadow: none;
-        }
-        .accordion-button::after {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230d6efd'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
-        }
-        .accordion-button.collapsed::after {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236c757d'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
-        }
-        .accordion-body {
-            padding: 1.5rem;
-            background-color: #ffffff;
-            line-height: 1.8;
-            color: #495057;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        .hover-link:hover {
-            color: #a3d9ff !important;
-            text-decoration: underline !important;
+        .btn-add-cart:hover {
+            background: #00d5ff;
+            transform: scale(1.05);
         }
+     /* Marquee Container */
+     .marquee-container {
+         width: 100%;
+         overflow: hidden;
+         background: white;
+         padding: 40px 0;
+         margin: 30px 0;
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+         border-radius: 15px;
+     }
 
-        footer a i:hover {
-            color: #8cff00 !important;
-            transform: scale(1.2);
-            transition: all 0.3s;
-        }
-        @media (max-width: 576px) {
-  .display-3 {
-    font-size: 2rem;
-  }
-}
+     /* Marquee Wrapper */
+     .marquee {
+         display: flex;
+         width: fit-content;
+         animation: scroll 25s linear infinite;
+     }
+
+     /* Pause animation on hover */
+     .marquee-container:hover .marquee {
+         animation-play-state: paused;
+     }
+
+     /* Category Button in Marquee */
+     .cat-btn {
+         background: white;
+         border: 3px solid #b3b3b3;
+         border-radius: 20px;
+         padding: 20px 30px;
+         margin: 0 20px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+         min-width: 140px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .cat-btn:hover {
+         background: #ffffff;
+         transform: translateY(1px) scale(1.05);
+         box-shadow: 0 8px 25px rgba(50, 50, 50, 0.3);
+     }
+
+     .cat-btn img {
+         width: 80px;
+         height: 80px;
+         object-fit: contain;
+         transition: transform 0.3s ease;
+     }
+
+     .cat-btn:hover img {
+         transition: transform .2s;
+     }
+
+     /* Scroll Animation */
+     @keyframes scroll {
+         0% {
+             transform: translateX(0);
+         }
+
+         100% {
+             transform: translateX(-50%);
+         }
+     }
+
+     /* Title Styling */
+     .section-title {
+         text-align: center;
+         font-weight: bold;
+         font-size: 2rem;
+         color: #333;
+         margin-bottom: 20px;
+     }
+
+     footer a i:hover {
+         color: #8cff00 !important;
+         transform: scale(1.2);
+         transition: all 0.3s;
+     }
+
+     @media (max-width: 576px) {
+         .display-3 {
+             font-size: 2rem;
+         }
+     }
